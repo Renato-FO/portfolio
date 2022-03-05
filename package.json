@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --force",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "qs": "^6.10.3",
+    "vue": "^3.2.25",
+    "vue-router": "4",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "postcss": "^8.4.7",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:zmotinstitute/jornio-app.git",
+  "author": "Renato-FO <renatoordonho@gmail.com>",
+  "license": "MIT"
+}

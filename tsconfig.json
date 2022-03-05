@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+			"@/*": [ "./*" ],
+      "~/*": [ "./*" ],
+			"@assets/*": [ "./assets/*" ],
+			"@/assets/*": [ "./assets/*" ],
+			"@components/*": [ "./components/*" ],
+			"@/components/*": [ "./components/*" ],
+      "@tests/*": ["../tests/*"]
+		},
+    "strict": false,
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+  },
+  "resolveJsonModule": true,
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+ ],
+  "exclude": [
+    "node_modules"
+  ]
+}

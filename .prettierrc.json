@@ -1,6 +1,7 @@
 {
-  "trailingComma": "none",
-  "semi": false,
+  "trailingComma": "all",
+  "semi": true,
   "singleQuote": true,
-  "printWidth": 80
+  "printWidth": 80,
+  "linebreak-style": false
 }

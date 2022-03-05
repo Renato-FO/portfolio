@@ -10,6 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
+  background-color: black;
 }
 
 body,
@@ -18,5 +19,6 @@ textarea,
 button,
 select {
   font: 500 1rem Montserrat, sans-serif;
+  background-color: black;
 }
 </style>

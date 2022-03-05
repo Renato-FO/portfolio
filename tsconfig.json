@@ -3,14 +3,14 @@
     "baseUrl": "./src",
     "allowSyntheticDefaultImports": true,
     "paths": {
-			"@/*": [ "./*" ],
-      "~/*": [ "./*" ],
-			"@assets/*": [ "./assets/*" ],
-			"@/assets/*": [ "./assets/*" ],
-			"@components/*": [ "./components/*" ],
-			"@/components/*": [ "./components/*" ],
+      "@/*": ["./*"],
+      "~/*": ["./*"],
+      "@assets/*": ["./assets/*"],
+      "@/assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@/components/*": ["./components/*"],
       "@tests/*": ["../tests/*"]
-		},
+    },
     "strict": false,
     "jsx": "preserve",
     "target": "esnext",
@@ -23,13 +23,16 @@
     "noEmit": true,
     "allowJs": true,
     "sourceMap": true,
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ],
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
+  "overrides": [
+    {
+      "files": ["src/views/**/*.vue"],
+      "rules": {
+        "vue/multi-word-component-names": 0
+      }
+    }
+  ],
   "resolveJsonModule": true,
   "include": [
     "src/**/*.ts",
@@ -38,8 +41,6 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
- ],
-  "exclude": [
-    "node_modules"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }

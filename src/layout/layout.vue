@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <main class="h-screen block bg-black overflow-hidden absolute w-screen">
+  <main class="h-full w-full block overflow-y-scroll overflow-x-hidden">
     <Topbar />
     <router-view />
   </main>

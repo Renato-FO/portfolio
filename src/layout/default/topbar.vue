@@ -14,6 +14,10 @@ const menu = ref([
     displayName: 'Projects',
     path: '/projects',
   },
+  {
+    displayName: 'Contact',
+    path: '/contact',
+  },
 ]);
 
 const count = ref(0);
@@ -26,9 +30,11 @@ export default {
 </script>
 
 <template>
-  <div class="w-full h-12 flex items-center justify-center">
+  <div
+    class="w-full px-64 bg-black pt-20 mx-auto flex items-center justify-center"
+  >
     <div
-      class="text-xl mt-20 mx-auto text-white hover:opacity-60"
+      class="text-xl mx-auto text-white hover:opacity-60"
       v-for="item in menu"
       :key="item.id"
     >

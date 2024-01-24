@@ -120,10 +120,10 @@ export default function Header({
                 12<span className="ml-6">const Renato = new Person(</span>
               </p>
               <p>
-                13<span className="ml-8">"Renato Ordonho"</span>
+                13<span className="ml-8">{`"Renato Ordonho"`}</span>
               </p>
               <p>
-                14<span className="ml-8">"Full-stack Developer"</span>
+                14<span className="ml-8">{`"Full-stack Developer"`}</span>
               </p>
               <p>
                 15<span className="ml-8">1996</span>

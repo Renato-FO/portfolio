@@ -59,8 +59,8 @@ export default function Tooling({ title, subtitle }: Props) {
   ];
 
   return (
-    <section id="tooling" className="w-full h-screen bgCustomized">
-      <div className="content h-full flex flex-col px-2 mt-20 sm:mt-24 items-center">
+    <section id="tooling" className="w-full h-screen bgCustomized flex">
+      <div className="content flex flex-col px-2 my-auto sm:mt-24 items-center">
         <h1 className="w-full text-center text-4xl lg:text-6xl font-bold text-primary-green">
           {title}
         </h1>

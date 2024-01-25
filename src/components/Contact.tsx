@@ -56,8 +56,8 @@ export default function Contact({
   };
 
   return (
-    <section id="contact" className="w-full h-screen bgCustomized">
-      <div className="content h-full flex flex-col px-2 mt-20 sm:mt-24 items-center">
+    <section id="contact" className="w-full h-screen bgCustomized flex">
+      <div className="content flex flex-col px-2 my-auto sm:mt-24 items-center">
         <h1 className="w-full text-center text-4xl lg:text-6xl font-bold text-primary-green">
           {title}
         </h1>
@@ -66,7 +66,7 @@ export default function Contact({
         </h3>
         <div className="mt-6 w-full grid grid-cols-2 text-primary-green gap-6">
           <div>
-            <label htmlFor="name" className="text-lg font-semibold">
+            <label htmlFor="name" className="text-sm md:text-lg font-semibold">
               {contact_name_label}
             </label>
             <input
@@ -78,7 +78,7 @@ export default function Contact({
             />
           </div>
           <div>
-            <label htmlFor="email" className="text-lg font-semibold">
+            <label htmlFor="email" className="text-sm md:text-lg font-semibold">
               {contact_email_label}
             </label>
             <input
@@ -90,7 +90,10 @@ export default function Contact({
             />
           </div>
           <div className="col-span-2">
-            <label htmlFor="message" className="text-lg font-semibold">
+            <label
+              htmlFor="message"
+              className="text-sm md:text-lg font-semibold"
+            >
               {contact_message_label}
             </label>
             <textarea

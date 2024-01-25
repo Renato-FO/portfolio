@@ -4,6 +4,7 @@ import {
   useEffect,
   useState,
 } from "react";
+import { useRouter } from "next/router";
 import api from "./api/locales/route";
 import { Dictionary } from "./api/locales/types";
 import Header from "@/components/Header";
@@ -11,6 +12,9 @@ import About from "@/components/About";
 import Tooling from "@/components/Tooling";
 import Companies from "@/components/Companies";
 import Contact from "@/components/Contact";
+import portuguese from "@/images/flag_br.svg";
+import english from "@/images/flag_usa.svg";
+import Image from "next/image";
 
 interface Params {
   locale: string;
@@ -75,10 +79,18 @@ export default function Home({ locale, dictionary }: Props) {
         background: "#66FF66",
       },
     ],
-    pages = ["header", "about", "tooling", "companies", "contact"];
+    pages = ["header", "about", "tooling", "companies", "contact"],
+    router = useRouter();
 
   const handleOpen = () => {
     setOpened(!opened);
+  };
+
+  const handleChangeLocale = () => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, {
+      locale: locale === "en-US" ? "pt-BR" : "en-US",
+    });
   };
 
   const selectPage = (
@@ -167,8 +179,8 @@ export default function Home({ locale, dictionary }: Props) {
         <div className="flex fixed w-full content">
           <div
             style={{ "--background-menu": background } as React.CSSProperties}
-            className={`menu p-4 pt-20 lg:pt-24 gap-8 items-center flex flex-col  ${
-              opened ? "openedMenu" : ""
+            className={`menu p-4 pt-14 lg:pt-24 gap-8 items-center   ${
+              opened ? "openedMenu flex flex-col" : "hidden"
             }`}
           >
             {menu.map((item) => {
@@ -197,6 +209,27 @@ export default function Home({ locale, dictionary }: Props) {
                 </div>
               );
             })}
+            <button
+              onClick={handleChangeLocale}
+              className="px-2 mx-auto rounded-sm transition-all ease-in cursor-pointer font-semibold menuItem flex items-center justify-center gap-2 text-center"
+              style={
+                {
+                  color: closeBG,
+                  "--color-text": menuBG,
+                  "--background-text": closeBG,
+                } as React.CSSProperties
+              }
+            >
+              {locale === "en-US" ? "Language" : "Idioma"}
+              <Image
+                alt={locale}
+                src={locale === "en-US" ? english : portuguese}
+                height={25}
+              />
+            </button>
+            <p className="text-xs mt-auto flex text-gray-500">
+              Developed with Next.JS
+            </p>
           </div>
         </div>
         <div style={{ zIndex: 2000 }} className="flex fixed w-full content">
@@ -258,8 +291,8 @@ export const getStaticProps = async (params: Params) => {
 
   return {
     props: {
-      dictionary,
       locale,
+      dictionary,
     },
     revalidate: false,
   };

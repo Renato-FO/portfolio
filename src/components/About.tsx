@@ -9,7 +9,7 @@ export default function About({ about_text, about_title }: Props) {
       id="about"
       className="w-full flex flex-col content h-screen items-center bg-white"
     >
-      <div className="mt-24">
+      <div className="my-auto sm:mt-24">
         <h1 className="text-primary-blue text-center text-2xl lg:text-4xl font-bold">
           {about_title}
         </h1>

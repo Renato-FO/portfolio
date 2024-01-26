@@ -2,6 +2,7 @@ import arrowRight from "@/images/arrowRight.png";
 import api from "@/pages/api/mail/sendMail";
 import Image from "next/image";
 import { useState } from "react";
+import Toast from "./Toast";
 
 interface Props {
   title: string;
@@ -26,9 +27,11 @@ export default function Contact({
   contact_message_placeholder,
   contact_send,
 }: Props) {
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState(""),
+    [mail, setMail] = useState(""),
+    [message, setMessage] = useState(""),
+    [disabled, setDisabled] = useState(false),
+    [showMessage, setShowMessage] = useState(true);
 
   const sendMail = () => {
     let data = {
@@ -37,6 +40,8 @@ export default function Contact({
       message,
     };
 
+    setDisabled(true);
+
     fetch("/api/mail/sendMail", {
       method: "POST",
       headers: {
@@ -44,13 +49,10 @@ export default function Contact({
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((res) => {
-      console.log("Response received");
+    }).then((res: any) => {
       if (res.status === 200) {
-        console.log("Response succeeded!");
-        setName("");
-        setMail("");
-        setMessage("");
+        setDisabled(false);
+        setShowMessage(true);
       }
     });
   };
@@ -108,13 +110,22 @@ export default function Contact({
           </div>
         </div>
         <button
+          disabled={disabled}
           onClick={sendMail}
-          className="border-2 border-primary-green w-52 py-2 rounded-md mt-4 font-semibold text-primary-green flex items-center gap-2 justify-center placeholder-primary-green placeholder-opacity-60 placeholder:font-semibold"
+          className={`border-2 border-primary-green w-52 py-2 rounded-md mt-4 font-semibold text-primary-green flex items-center gap-2 justify-center placeholder-primary-green placeholder-opacity-60 placeholder:font-semibold ${
+            disabled ? "cursor-progress" : ""
+          }`}
         >
           {contact_send}
           <Image alt={contact_send} src={arrowRight} height={15} />
         </button>
       </div>
+      <Toast
+        show={showMessage}
+        onClose={() => {
+          return setShowMessage(false);
+        }}
+      />
     </section>
   );
 }

@@ -1,4 +1,9 @@
 export interface Dictionary {
+  menu_home: string;
+  menu_about: string;
+  menu_tooling: string;
+  menu_companies: string;
+  menu_contact: string;
   title: string;
   subtitle_one: string;
   subtitle_two: string;

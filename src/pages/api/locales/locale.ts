@@ -2,6 +2,11 @@ import { Dictionary } from "@/pages/api/locales/types";
 
 export const DICTIONARIES: Record<string, Dictionary> = {
   "en-US": {
+    menu_home: "Home",
+    menu_about: "About",
+    menu_companies: "Companies",
+    menu_contact: "Contact",
+    menu_tooling: "Tooling",
     title: "Full-stack Developer.",
     subtitle_one:
       "Crafting High-Performance Web Experiences with Technical Expertise and Professional Precision",
@@ -29,6 +34,11 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     contact_send: "Send",
   },
   "pt-BR": {
+    menu_home: "Início",
+    menu_about: "Sobre",
+    menu_companies: "Empresas",
+    menu_contact: "Contato",
+    menu_tooling: "Ferramentas",
     title: "Desenvolvedor Full-stack.",
     subtitle_one:
       "Criando Experiências Web de Alto Desempenho com Expertise Técnica e Precisão Profissional",

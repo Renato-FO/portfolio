@@ -31,7 +31,7 @@ export default function Contact({
     [mail, setMail] = useState(""),
     [message, setMessage] = useState(""),
     [disabled, setDisabled] = useState(false),
-    [showMessage, setShowMessage] = useState(true);
+    [showMessage, setShowMessage] = useState(false);
 
   const sendMail = () => {
     let data = {

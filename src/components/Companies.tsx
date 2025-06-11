@@ -21,7 +21,7 @@ export default function Companies({ title, subtitle }: Props) {
       displayName: "Jornio",
       image: jornio,
       occupation: "Full-stack Developer",
-      assignments: ["GIT control", "NestJS", "MariaDB", "PostgreSQL"],
+      assignments: ["GIT control", "NestJS", "MariaDB", "PostgreSQL", "VueJS"],
     },
     {
       displayName: "Você Azul",

@@ -106,7 +106,7 @@ export default function Header({
               <p>
                 8
                 <span className="ml-10">
-                  this.age = new Date().getFullYear() - year
+                  this.age = new Date().getFullYear() - birthyear
                 </span>
               </p>
               <p>

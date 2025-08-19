@@ -43,10 +43,10 @@ export default function Header({
       <div className="content h-full flex flex-col justify-center items-start px-2">
         <div className="w-full flex justify-between">
           <div className="w-full flex md:block flex-col justify-center items-center md:w-1/2 lg:w-2/3">
-            <h1 className="text-primary-green font-extrabold text-center md:text-left text-5xl md:text-6xl xl:text-8xl max-w-xl">
+            <h1 className="text-white font-extrabold text-center md:text-left text-5xl md:text-6xl xl:text-8xl max-w-3xl">
               {title}
             </h1>
-            <h2 className="text-white text-center md:text-left text-base md:text-lg xl:text-xl font-extrabold mt-4 max-w-2xl">
+            <h2 className="text-primary-green text-center md:text-left text-2xl md:text-3xl xl:text-4xl font-extrabold mt-2 max-w-2xl">
               {subtitle_one}
             </h2>
             <div className="mt-4 flex gap-3">

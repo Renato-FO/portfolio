@@ -15,25 +15,25 @@ export default function Companies({ title, subtitle }: Props) {
       displayName: "Chreative",
       image: chreative,
       occupation: "SAP Consultant",
-      assignments: ["GIT Control", "SAPUI5", "SAP Fiori", "Javascript"],
+      description: "Desenvolvi e mantive aplicações SAP Fiori/UI5 para otimização de processos internos. Fui responsável pelo controle de versionamento com GIT e pela implementação de novas funcionalidades em JavaScript, melhorando a usabilidade de sistemas legados."
     },
     {
       displayName: "Jornio",
       image: jornio,
       occupation: "Full-stack Developer",
-      assignments: ["GIT control", "NestJS", "MariaDB", "PostgreSQL", "VueJS"],
+      description: "Participei do desenvolvimento de uma plataforma SaaS para gestão de ponto. Fui responsável pela API RESTful com NestJS e bancos de dados MariaDB/PostgreSQL, além de criar componentes reativos no front-end com VueJS para visualização de relatórios."
     },
     {
       displayName: "Você Azul",
       image: voceazul,
       occupation: "Full-stack Developer",
-      assignments: ["Strapi", "VueJS", "Javascript"],
+      description: "Atuei no desenvolvimento de um sistema de gestão de conteúdo (CMS) utilizando Strapi no back-end e VueJS no front-end. Criei interfaces dinâmicas para gerenciar e exibir conteúdo de forma eficiente para os usuários finais."
     },
     {
       displayName: "Influu",
       image: influu,
       occupation: "Front-end Developer",
-      assignments: ["VueJS", "React", "Jest", "TDD", "Javascript", "NodeJS"],
+      description: "Desenvolvi interfaces para uma plataforma de marketing de influência utilizando VueJS e React. Implementei testes unitários com Jest, seguindo a metodologia TDD, para garantir a qualidade e a estabilidade dos componentes da interface."
     },
   ];
 
@@ -51,34 +51,29 @@ export default function Companies({ title, subtitle }: Props) {
             {subtitle}
           </h3>
         </div>
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 items-stretch justify-center">
           {companies.map((company) => {
             return (
-              <div key={company.displayName} className="companyCard">
-                <div className="mt-2 lg:mt-10 items-center">
+              <div key={company.displayName} className="companyCard bg-gray-50 p-4 rounded-lg shadow-md flex flex-col">
+                <div className="flex-grow">
                   <div className="w-full flex flex-col items-center">
                     <Image
                       alt={company.displayName}
                       src={company.image}
-                      height={80}
-                      className=""
+                      height={60}
+                      width={60}
+                      className="rounded-full"
                     />
-                    <p className="text-center font-bold text-primary-blue text-lg lg:text-2xl lg:mt-2">
+                    <p className="text-center font-bold text-primary-blue text-lg lg:text-xl mt-2">
                       {company.displayName}
                     </p>
                   </div>
-                  <p className="text-center font-bold text-primary-blue text-sm lg:text-base">
+                  <p className="text-center font-bold text-primary-blue text-sm mt-1">
                     {company.occupation}
                   </p>
-                  <ul className="mt-3 list-disc font-semibold text-primary-blue hidden md:block">
-                    {company.assignments.map((assign) => {
-                      return (
-                        <li key={assign} className="text-xs lg:text-sm">
-                          {assign}
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <p className="mt-2 font-semibold text-primary-blue text-xs text-center leading-relaxed">
+                    {company.description}
+                  </p>
                 </div>
               </div>
             );

@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Gemini CLI files
+GEMINI.md
+TASKLOG.md

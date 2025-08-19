@@ -6,19 +6,19 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_about: "About",
     menu_companies: "Companies",
     menu_contact: "Contact",
-    menu_tooling: "Tooling",
-    title: "Full-stack Developer.",
+    menu_projects: "Projects",
+    title: "Renato Ordonho",
     subtitle_one:
-      "Crafting High-Performance Web Experiences with Technical Expertise and Professional Precision",
+      "Full-stack Developer focused on performance and usability.",
     subtitle_two:
       "Mastering Webcraft: Precision and Expertise in Crafting High-Performance Digital Experiences.",
     subtitle_three:
       "Elevate with Precision: Crafting Professional Web Experiences with Technical Mastery.",
-    about_title: "Hi, i’m Renato. Nice to meet you",
+    about_title: "About Me",
     about_text:
-      "Since I started my career as a web developer over 3 years ago, I have been working remotely for agencies, various companies, and collaborating with talented individuals. I am creative, collaborative, curious, and constantly striving to further develop my skills.",
-    tooling_title: "Tooling",
-    tooling_subtitle: "Some of the tools I use most",
+      "Developer with over 4 years of experience specializing in the JavaScript/TypeScript ecosystem. My expertise ranges from building robust APIs with NestJS and PostgreSQL to developing reactive interfaces with React, Vue.js, and SAPUI5. I focus on writing clean code and delivering solutions that provide real business value.",
+    projects_title: "Featured Projects",
+    projects_subtitle: "Some projects I've worked on",
     companies_title: "Companies",
     companies_subtitle: "companies I have collaborated with",
     contact_title: "Send me a message!",
@@ -38,19 +38,19 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_about: "Sobre",
     menu_companies: "Empresas",
     menu_contact: "Contato",
-    menu_tooling: "Ferramentas",
-    title: "Desenvolvedor Full-stack.",
+    menu_projects: "Projetos",
+    title: "Renato Ordonho",
     subtitle_one:
-      "Criando Experiências Web de Alto Desempenho com Expertise Técnica e Precisão Profissional",
+      "Desenvolvedor Full-stack especialista em performance e usabilidade.",
     subtitle_two:
       "Dominando a Arte da Web: Precisão e Expertise na Criação de Experiências Digitais de Alto Desempenho.",
     subtitle_three:
       "Eleve com Precisão: Criando Experiências Web Profissionais com Maestria Técnica.",
-    about_title: "Oi, eu sou Renato. Prazer em te conhecer",
+    about_title: "Sobre Mim",
     about_text:
-      "Desde que iniciei minha carreira como desenvolvedor web há mais de 3 anos, tenho trabalhado remotamente para agências, diversas empresas e colaborado com pessoas talentosas. Sou criativo, colaborativo, curioso e estou constantemente buscando aprimorar minhas habilidades.",
-    tooling_title: "Ferramentas",
-    tooling_subtitle: "Algumas das ferramentas que mais utilizo",
+      "Desenvolvedor com mais de 4 anos de experiência, especializado no ecossistema JavaScript/TypeScript. Minha expertise abrange desde a criação de APIs robustas com NestJS e PostgreSQL até o desenvolvimento de interfaces reativas com React, Vue.js e SAPUI5. Meu foco é escrever código limpo e entregar soluções que gerem valor real para o negócio.",
+    projects_title: "Projetos em Destaque",
+    projects_subtitle: "Alguns projetos que desenvolvi",
     companies_title: "Empresas",
     companies_subtitle: "empresas que já colaborei",
     contact_title: "Envie-me uma mensagem!",

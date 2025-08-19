@@ -1,3 +1,14 @@
+# Renato Ferreira Ordonho's Personal Portfolio
+
+This is the repository for my personal portfolio, designed to showcase my skills, experience, and contact information as a Full-stack Developer. The portfolio is built with Next.js, React, TypeScript, and styled with Tailwind CSS.
+
+## Key Features
+
+*   **Single Page Application (SPA):** A modern and interactive user experience.
+*   **Internationalization (i18n):** Supports both Portuguese (pt-BR) and English (en-US).
+*   **Contact Form:** An API endpoint using Nodemailer for sending emails.
+*   **Responsive Design:** Looks great on all devices.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

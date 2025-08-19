@@ -9,7 +9,7 @@ import api from "./api/locales/route";
 import { Dictionary } from "./api/locales/types";
 import Header from "@/components/Header";
 import About from "@/components/About";
-import Tooling from "@/components/Tooling";
+import Projects from "@/components/Projects";
 import Companies from "@/components/Companies";
 import Contact from "@/components/Contact";
 import portuguese from "@/images/flag_br.svg";
@@ -58,8 +58,8 @@ export default function Home({ locale, dictionary }: Props) {
         background: "#001F3F",
       },
       {
-        displayName: dictionary.menu_tooling,
-        id: "tooling",
+        displayName: dictionary.menu_projects,
+        id: "projects",
         bgMenu: "white",
         bgClose: "#001F3F",
         background: "#66FF66",
@@ -79,7 +79,7 @@ export default function Home({ locale, dictionary }: Props) {
         background: "#66FF66",
       },
     ],
-    pages = ["header", "about", "tooling", "companies", "contact"],
+    pages = ["header", "about", "projects", "companies", "contact"],
     router = useRouter();
 
   const handleOpen = () => {
@@ -262,9 +262,9 @@ export default function Home({ locale, dictionary }: Props) {
         about_title={dictionary.about_title}
         about_text={dictionary.about_text}
       />
-      <Tooling
-        title={dictionary.tooling_title}
-        subtitle={dictionary.tooling_subtitle}
+      <Projects
+        title={dictionary.projects_title}
+        subtitle={dictionary.projects_subtitle}
       />
       <Companies
         title={dictionary.companies_title}

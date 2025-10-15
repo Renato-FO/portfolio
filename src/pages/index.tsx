@@ -53,7 +53,7 @@ export default function Home({ locale, dictionary }: Props) {
         background: "#001F3F",
       },
       {
-        displayName: dictionary.menu_projects,
+        displayName: dictionary.menu_tooling,
         id: "projects",
         bgMenu: "white",
         bgClose: "#001F3F",
@@ -239,8 +239,8 @@ export default function Home({ locale, dictionary }: Props) {
         about_text={dictionary.about_text}
       />
       <Projects
-        title={dictionary.projects_title}
-        subtitle={dictionary.projects_subtitle}
+        title={dictionary.tooling_title}
+        subtitle={dictionary.tooling_subtitle}
       />
       <Companies
         title={dictionary.companies_title}

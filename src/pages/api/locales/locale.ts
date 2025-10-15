@@ -19,7 +19,7 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     tooling_title: "Tooling",
     tooling_subtitle: "Some of the tools I use most",
     companies_title: "Companies",
-    companies_subtitle: "companies I have collaborated with",
+    companies_subtitle: "Companies I have collaborated with",
     contact_title: "Send me a message!",
     contact_subtitle:
       "Got a question or proposal, or just want to say hello? Go ahead.",
@@ -51,7 +51,7 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     tooling_title: "Ferramentas",
     tooling_subtitle: "Algumas das ferramentas que mais utilizo",
     companies_title: "Empresas",
-    companies_subtitle: "empresas que já colaborei",
+    companies_subtitle: "Empresas que já colaborei",
     contact_title: "Envie-me uma mensagem!",
     contact_subtitle:
       "Tem alguma pergunta ou proposta, ou só quer dizer olá? Fique à vontade.",

@@ -1,9 +1,4 @@
-import {
-  HtmlHTMLAttributes,
-  MouseEventHandler,
-  useEffect,
-  useState,
-} from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import api from "./api/locales/route";
 import { Dictionary } from "./api/locales/types";
@@ -112,30 +107,11 @@ export default function Home({ locale, dictionary }: Props) {
         setCloseBG(close);
         setBackground(menuBackground);
         setSelectedPage(id);
-
-        setTimeout(() => {
-          setScrolling(false);
-        }, 500);
       }
     }
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      pages.forEach((page, index) => {
-        var elementTop = document.getElementById(page)?.offsetTop;
-        var scroll = window.scrollY;
-        var object: MenuItem = menu[index];
-
-        if (elementTop === scroll) {
-          setSelectedPage(object.id);
-          setCloseBG(object.bgClose);
-          setMenuBG(object.background);
-          setBackground(object.bgMenu);
-        }
-      });
-    }, 500);
-
     window.addEventListener(
       "wheel",
       (e) => {
@@ -179,7 +155,7 @@ export default function Home({ locale, dictionary }: Props) {
         <div className="flex fixed w-full content">
           <div
             style={{ "--background-menu": background } as React.CSSProperties}
-            className={`menu p-4 pt-14 lg:pt-24 gap-8 items-center   ${
+            className={`menu pt-24 gap-2 px-2 items-center   ${
               opened ? "openedMenu flex flex-col" : "hidden"
             }`}
           >
@@ -202,7 +178,7 @@ export default function Home({ locale, dictionary }: Props) {
                         "--background-text": closeBG,
                       } as React.CSSProperties
                     }
-                    className="px-2 w-min mx-auto rounded-sm transition-all ease-in cursor-pointer font-semibold menuItem"
+                    className="rounded-sm w-full h-10 transition-all ease-in cursor-pointer font-semibold menuItem"
                   >
                     {item.displayName}
                   </button>
@@ -211,7 +187,7 @@ export default function Home({ locale, dictionary }: Props) {
             })}
             <button
               onClick={handleChangeLocale}
-              className="px-2 mx-auto rounded-sm transition-all ease-in cursor-pointer font-semibold menuItem flex items-center justify-center gap-2 text-center"
+              className="rounded-sm transition-all h-10 w-full ease-in cursor-pointer font-semibold menuItem flex items-center justify-center gap-2 text-center"
               style={
                 {
                   color: closeBG,

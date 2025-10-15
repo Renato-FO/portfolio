@@ -6,10 +6,9 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_about: "About",
     menu_companies: "Companies",
     menu_contact: "Contact",
-    menu_projects: "Projects",
+    menu_tooling: "Tooling",
     title: "Renato Ordonho",
-    subtitle_one:
-      "Full-stack Developer focused on performance and usability.",
+    subtitle_one: "Full-stack Developer focused on performance and usability.",
     subtitle_two:
       "Mastering Webcraft: Precision and Expertise in Crafting High-Performance Digital Experiences.",
     subtitle_three:
@@ -17,8 +16,8 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     about_title: "About Me",
     about_text:
       "Developer with over 4 years of experience specializing in the JavaScript/TypeScript ecosystem. My expertise ranges from building robust APIs with NestJS and PostgreSQL to developing reactive interfaces with React, Vue.js, and SAPUI5. I focus on writing clean code and delivering solutions that provide real business value.",
-    projects_title: "Featured Projects",
-    projects_subtitle: "Some projects I've worked on",
+    tooling_title: "Tooling",
+    tooling_subtitle: "Some of the tools I use most",
     companies_title: "Companies",
     companies_subtitle: "companies I have collaborated with",
     contact_title: "Send me a message!",
@@ -38,7 +37,7 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_about: "Sobre",
     menu_companies: "Empresas",
     menu_contact: "Contato",
-    menu_projects: "Projetos",
+    menu_tooling: "Ferramentas",
     title: "Renato Ordonho",
     subtitle_one:
       "Desenvolvedor Full-stack especialista em performance e usabilidade.",
@@ -49,8 +48,8 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     about_title: "Sobre Mim",
     about_text:
       "Desenvolvedor com mais de 4 anos de experiência, especializado no ecossistema JavaScript/TypeScript. Minha expertise abrange desde a criação de APIs robustas com NestJS e PostgreSQL até o desenvolvimento de interfaces reativas com React, Vue.js e SAPUI5. Meu foco é escrever código limpo e entregar soluções que gerem valor real para o negócio.",
-    projects_title: "Projetos em Destaque",
-    projects_subtitle: "Alguns projetos que desenvolvi",
+    tooling_title: "Ferramentas",
+    tooling_subtitle: "Algumas das ferramentas que mais utilizo",
     companies_title: "Empresas",
     companies_subtitle: "empresas que já colaborei",
     contact_title: "Envie-me uma mensagem!",

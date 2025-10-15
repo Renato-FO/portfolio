@@ -27,7 +27,7 @@ const socials = [
   {
     id: "Linkedin",
     alt: "Linkedin",
-    link: "https://www.linkedin.com/in/renato-ferreira-ordonho-901890173/",
+    link: "https://www.linkedin.com/in/renato-ordonho-901890173/",
     icon: linkedin,
   },
 ];

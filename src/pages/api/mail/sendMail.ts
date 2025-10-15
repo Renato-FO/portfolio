@@ -1,4 +1,4 @@
-export default function (req: any, res: any) {
+export default function sendMail(req: any, res: any) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
     port: 465,

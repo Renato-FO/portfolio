@@ -152,16 +152,16 @@ export default function Home({ locale, dictionary }: Props) {
 
   const seoTitle =
       locale === "en-US"
-        ? "Renato Ordonho | Frontend Software Engineer"
-        : "Renato Ordonho | Frontend Software Engineer",
+        ? "Renato Ordonho | Fullstack Software Engineer"
+        : "Renato Ordonho | Fullstack Software Engineer",
     seoDescription =
       locale === "en-US"
-        ? "Frontend Software Engineer with 5+ years of experience delivering enterprise web applications with React, TypeScript, Vue.js, SAPUI5, and SAP Fiori."
-        : "Frontend Software Engineer com 5+ anos de experiência entregando aplicações web enterprise com React, TypeScript, Vue.js, SAPUI5 e SAP Fiori.",
+        ? "Fullstack Software Engineer with 5+ years of experience delivering enterprise web applications with React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, and NestJS."
+        : "Fullstack Software Engineer com 5+ anos de experiência entregando aplicações web enterprise com React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js e NestJS.",
     seoKeywords =
       locale === "en-US"
-        ? "Frontend Software Engineer, React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, NestJS, Strapi, CI/CD, REST API"
-        : "Frontend Software Engineer, React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, NestJS, Strapi, CI/CD, API REST";
+        ? "Fullstack Software Engineer, React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, NestJS, Strapi, CI/CD, REST API"
+        : "Fullstack Software Engineer, React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, NestJS, Strapi, CI/CD, API REST";
 
   return (
     <main className="flex min-h-screen flex-col items-center relative overflow-hidden">

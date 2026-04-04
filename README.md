@@ -1,6 +1,6 @@
 # Renato Ordonho — Portfolio
 
-This repository contains my personal portfolio website. It presents my professional positioning as a **Frontend Software Engineer** with full-stack delivery experience as a secondary focus.
+This repository contains my personal portfolio website. It presents my professional positioning as a **Fullstack Software Engineer** with strong frontend specialization.
 
 ## Purpose
 
@@ -54,4 +54,4 @@ Recommended flow:
 
 ## PT-BR (Resumo)
 
-Portfólio profissional focado no posicionamento como **Frontend Software Engineer**, destacando experiência com React, TypeScript, Vue.js, SAPUI5/SAP Fiori e atuação full-stack complementar em Node.js/NestJS/Strapi.
+Portfólio profissional focado no posicionamento como **Fullstack Software Engineer**, com forte especialização em frontend e experiência em React, TypeScript, Vue.js, SAPUI5/SAP Fiori, Node.js, NestJS e Strapi.

@@ -127,7 +127,7 @@ export default function Header({
               </p>
               <p>
                 14
-                <span className="ml-8">{`"Frontend Software Engineer"`}</span>
+                <span className="ml-8">{`"Fullstack Software Engineer"`}</span>
               </p>
               <p>
                 15<span className="ml-8">1996</span>

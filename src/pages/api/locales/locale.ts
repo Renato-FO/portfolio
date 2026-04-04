@@ -9,14 +9,14 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_tooling: "Tooling",
     title: "Renato Ordonho",
     subtitle_one:
-      "Frontend Software Engineer with 5+ years building scalable applications with React, TypeScript, Vue.js, and SAPUI5.",
+      "Fullstack Software Engineer with 5+ years building scalable applications with React, TypeScript, Vue.js, and SAPUI5.",
     subtitle_two:
       "Delivered 20+ enterprise applications, with performance gains of up to 30% and legacy codebase reduction of around 60%.",
     subtitle_three:
-      "Full-stack background with Node.js, NestJS, Strapi, REST API integrations, CI/CD, and SQL/NoSQL databases.",
+      "Strong full-stack delivery with Node.js, NestJS, Strapi, REST API integrations, CI/CD, and SQL/NoSQL databases.",
     about_title: "About Me",
     about_text:
-      "Focused on enterprise-grade interfaces, component-based architecture, performance optimization, and product-driven integrations. I work in distributed remote teams and remain open to international remote opportunities.",
+      "Focused on enterprise-grade interfaces, component-based architecture, backend integrations, and performance optimization. I work in distributed remote teams and remain open to international remote opportunities.",
     tooling_title: "Skills",
     tooling_subtitle:
       "React, TypeScript, Vue.js, SAPUI5/SAP Fiori, Node.js, NestJS, Strapi, REST APIs, CI/CD, SQL and NoSQL",
@@ -43,14 +43,14 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_tooling: "Ferramentas",
     title: "Renato Ordonho",
     subtitle_one:
-      "Frontend Software Engineer com 5+ anos construindo aplicações escaláveis com React, TypeScript, Vue.js e SAPUI5.",
+      "Fullstack Software Engineer com 5+ anos construindo aplicações escaláveis com React, TypeScript, Vue.js e SAPUI5.",
     subtitle_two:
       "Entreguei mais de 20 aplicações enterprise, com ganhos de performance de até 30% e redução de cerca de 60% em codebases legadas.",
     subtitle_three:
-      "Experiência full-stack complementar com Node.js, NestJS, Strapi, integrações REST, CI/CD e bancos SQL e NoSQL.",
+      "Forte atuação full-stack com Node.js, NestJS, Strapi, integrações REST, CI/CD e bancos SQL e NoSQL.",
     about_title: "Sobre Mim",
     about_text:
-      "Especialista em interfaces enterprise, arquitetura baseada em componentes, otimização de performance e integrações orientadas a produto. Atuo em times distribuídos no modelo remoto e estou aberto a oportunidades internacionais remotas.",
+      "Atuação em interfaces enterprise, arquitetura baseada em componentes, integrações de backend e otimização de performance. Atuo em times distribuídos no modelo remoto e estou aberto a oportunidades internacionais remotas.",
     tooling_title: "Skills",
     tooling_subtitle:
       "React, TypeScript, Vue.js, SAPUI5/SAP Fiori, Node.js, NestJS, Strapi, APIs REST, CI/CD, SQL e NoSQL",

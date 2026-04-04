@@ -14,7 +14,7 @@ export default function Companies({ title, subtitle }: Props) {
     {
       displayName: "Chreative",
       image: chreative,
-      occupation: "Frontend Engineer (SAP)",
+      occupation: "Fullstack Engineer (SAP)",
       assignments: [
         "SAPUI5",
         "SAP Fiori",
@@ -25,7 +25,7 @@ export default function Companies({ title, subtitle }: Props) {
     {
       displayName: "Jornio",
       image: jornio,
-      occupation: "Frontend Engineer (Full-stack support)",
+      occupation: "Fullstack Engineer",
       assignments: [
         "Vue.js",
         "NestJS",
@@ -36,13 +36,13 @@ export default function Companies({ title, subtitle }: Props) {
     {
       displayName: "Você Azul",
       image: voceazul,
-      occupation: "Frontend Engineer (Headless CMS)",
+      occupation: "Fullstack Engineer (Headless CMS)",
       assignments: ["Vue.js", "Strapi", "JavaScript", "Product integrations"],
     },
     {
       displayName: "Influu",
       image: influu,
-      occupation: "Frontend Software Engineer",
+      occupation: "Fullstack Software Engineer",
       assignments: ["React", "Vue.js", "Jest/TDD", "Node.js", "CI/CD"],
     },
   ];

@@ -1,51 +1,57 @@
-# Renato Ferreira Ordonho's Personal Portfolio
+# Renato Ordonho — Portfolio
 
-This is the repository for my personal portfolio, designed to showcase my skills, experience, and contact information as a Full-stack Developer. The portfolio is built with Next.js, React, TypeScript, and styled with Tailwind CSS.
+This repository contains my personal portfolio website. It presents my professional positioning as a **Frontend Software Engineer** with full-stack delivery experience as a secondary focus.
 
-## Key Features
+## Purpose
 
-*   **Single Page Application (SPA):** A modern and interactive user experience.
-*   **Internationalization (i18n):** Supports both Portuguese (pt-BR) and English (en-US).
-*   **Contact Form:** An API endpoint using Nodemailer for sending emails.
-*   **Responsive Design:** Looks great on all devices.
+The portfolio is designed to:
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- Introduce my professional profile and technical focus.
+- Highlight relevant experience and delivery impact.
+- Show core skills used in enterprise and product environments.
+- Provide a direct contact channel for remote opportunities, including international roles.
 
-## Getting Started
+## Tech Stack
 
-First, run the development server:
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **UI:** React + Tailwind CSS
+- **Internationalization:** pt-BR / en-US dictionaries
+- **Backend (contact form):** Next.js API Route + Nodemailer
+
+## Main Sections
+
+- **Hero:** concise professional positioning.
+- **About:** professional summary focused on frontend architecture, performance, and integrations.
+- **Skills:** core technologies and delivery capabilities.
+- **Experience Highlights:** companies, role context, and key stack usage.
+- **Contact:** message form and social links.
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Build and Production Run
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build
+npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project can be deployed to any Next.js-compatible platform (e.g., Vercel).  
+Recommended flow:
 
-## Learn More
+1. Configure environment variables (for email sending).
+2. Run `npm run build` in CI.
+3. Deploy the generated Next.js build output with your hosting provider.
 
-To learn more about Next.js, take a look at the following resources:
+## PT-BR (Resumo)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Portfólio profissional focado no posicionamento como **Frontend Software Engineer**, destacando experiência com React, TypeScript, Vue.js, SAPUI5/SAP Fiori e atuação full-stack complementar em Node.js/NestJS/Strapi.

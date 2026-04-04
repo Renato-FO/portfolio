@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import api from "./api/locales/route";
 import { Dictionary } from "./api/locales/types";
 import Header from "@/components/Header";
@@ -149,8 +150,32 @@ export default function Home({ locale, dictionary }: Props) {
     );
   }, [scrolling]);
 
+  const seoTitle =
+      locale === "en-US"
+        ? "Renato Ordonho | Frontend Software Engineer"
+        : "Renato Ordonho | Frontend Software Engineer",
+    seoDescription =
+      locale === "en-US"
+        ? "Frontend Software Engineer with 5+ years of experience delivering enterprise web applications with React, TypeScript, Vue.js, SAPUI5, and SAP Fiori."
+        : "Frontend Software Engineer com 5+ anos de experiência entregando aplicações web enterprise com React, TypeScript, Vue.js, SAPUI5 e SAP Fiori.",
+    seoKeywords =
+      locale === "en-US"
+        ? "Frontend Software Engineer, React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, NestJS, Strapi, CI/CD, REST API"
+        : "Frontend Software Engineer, React, TypeScript, Vue.js, SAPUI5, SAP Fiori, Node.js, NestJS, Strapi, CI/CD, API REST";
+
   return (
     <main className="flex min-h-screen flex-col items-center relative overflow-hidden">
+      <Head>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <meta name="keywords" content={seoKeywords} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={seoTitle} />
+        <meta name="twitter:description" content={seoDescription} />
+      </Head>
       <div className="content flex justify-end w-full relative">
         <div className="flex fixed w-full content">
           <div

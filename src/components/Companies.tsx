@@ -14,26 +14,36 @@ export default function Companies({ title, subtitle }: Props) {
     {
       displayName: "Chreative",
       image: chreative,
-      occupation: "SAP Consultant",
-      assignments: ["GIT Control", "SAPUI5", "SAP Fiori", "Javascript"],
+      occupation: "Frontend Engineer (SAP)",
+      assignments: [
+        "SAPUI5",
+        "SAP Fiori",
+        "Enterprise UI delivery",
+        "Git workflows",
+      ],
     },
     {
       displayName: "Jornio",
       image: jornio,
-      occupation: "Full-stack Developer",
-      assignments: ["GIT control", "NestJS", "MariaDB", "PostgreSQL", "VueJS"],
+      occupation: "Frontend Engineer (Full-stack support)",
+      assignments: [
+        "Vue.js",
+        "NestJS",
+        "REST APIs",
+        "MariaDB/PostgreSQL",
+      ],
     },
     {
       displayName: "Você Azul",
       image: voceazul,
-      occupation: "Full-stack Developer",
-      assignments: ["Strapi", "VueJS", "Javascript"],
+      occupation: "Frontend Engineer (Headless CMS)",
+      assignments: ["Vue.js", "Strapi", "JavaScript", "Product integrations"],
     },
     {
       displayName: "Influu",
       image: influu,
-      occupation: "Front-end Developer",
-      assignments: ["VueJS", "React", "Jest", "TDD", "Javascript", "NodeJS"],
+      occupation: "Frontend Software Engineer",
+      assignments: ["React", "Vue.js", "Jest/TDD", "Node.js", "CI/CD"],
     },
   ];
 

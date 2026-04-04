@@ -8,18 +8,21 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_contact: "Contact",
     menu_tooling: "Tooling",
     title: "Renato Ordonho",
-    subtitle_one: "Full-stack Developer focused on performance and usability.",
+    subtitle_one:
+      "Fullstack Software Engineer with 5+ years building scalable applications with React, TypeScript, Vue.js, and SAPUI5.",
     subtitle_two:
-      "Mastering Webcraft: Precision and Expertise in Crafting High-Performance Digital Experiences.",
+      "Delivered 20+ enterprise applications, with performance gains of up to 30% and legacy codebase reduction of around 60%.",
     subtitle_three:
-      "Elevate with Precision: Crafting Professional Web Experiences with Technical Mastery.",
+      "Strong full-stack delivery with Node.js, NestJS, Strapi, REST API integrations, CI/CD, and SQL/NoSQL databases.",
     about_title: "About Me",
     about_text:
-      "Developer with over 4 years of experience specializing in the JavaScript/TypeScript ecosystem. My expertise ranges from building robust APIs with NestJS and PostgreSQL to developing reactive interfaces with React, Vue.js, and SAPUI5. I focus on writing clean code and delivering solutions that provide real business value.",
-    tooling_title: "Tooling",
-    tooling_subtitle: "Some of the tools I use most",
-    companies_title: "Companies",
-    companies_subtitle: "Companies I have collaborated with",
+      "Focused on enterprise-grade interfaces, component-based architecture, backend integrations, and performance optimization. I work in distributed remote teams and remain open to international remote opportunities.",
+    tooling_title: "Skills",
+    tooling_subtitle:
+      "React, TypeScript, Vue.js, SAPUI5/SAP Fiori, Node.js, NestJS, Strapi, REST APIs, CI/CD, SQL and NoSQL",
+    companies_title: "Experience Highlights",
+    companies_subtitle:
+      "Work across SAP and product environments, delivering maintainable frontend systems and supporting full-stack delivery when needed",
     contact_title: "Send me a message!",
     contact_subtitle:
       "Got a question or proposal, or just want to say hello? Go ahead.",
@@ -40,18 +43,20 @@ export const DICTIONARIES: Record<string, Dictionary> = {
     menu_tooling: "Ferramentas",
     title: "Renato Ordonho",
     subtitle_one:
-      "Desenvolvedor Full-stack especialista em performance e usabilidade.",
+      "Fullstack Software Engineer com 5+ anos construindo aplicações escaláveis com React, TypeScript, Vue.js e SAPUI5.",
     subtitle_two:
-      "Dominando a Arte da Web: Precisão e Expertise na Criação de Experiências Digitais de Alto Desempenho.",
+      "Entreguei mais de 20 aplicações enterprise, com ganhos de performance de até 30% e redução de cerca de 60% em codebases legadas.",
     subtitle_three:
-      "Eleve com Precisão: Criando Experiências Web Profissionais com Maestria Técnica.",
+      "Forte atuação full-stack com Node.js, NestJS, Strapi, integrações REST, CI/CD e bancos SQL e NoSQL.",
     about_title: "Sobre Mim",
     about_text:
-      "Desenvolvedor com mais de 4 anos de experiência, especializado no ecossistema JavaScript/TypeScript. Minha expertise abrange desde a criação de APIs robustas com NestJS e PostgreSQL até o desenvolvimento de interfaces reativas com React, Vue.js e SAPUI5. Meu foco é escrever código limpo e entregar soluções que gerem valor real para o negócio.",
-    tooling_title: "Ferramentas",
-    tooling_subtitle: "Algumas das ferramentas que mais utilizo",
-    companies_title: "Empresas",
-    companies_subtitle: "Empresas que já colaborei",
+      "Atuação em interfaces enterprise, arquitetura baseada em componentes, integrações de backend e otimização de performance. Atuo em times distribuídos no modelo remoto e estou aberto a oportunidades internacionais remotas.",
+    tooling_title: "Skills",
+    tooling_subtitle:
+      "React, TypeScript, Vue.js, SAPUI5/SAP Fiori, Node.js, NestJS, Strapi, APIs REST, CI/CD, SQL e NoSQL",
+    companies_title: "Destaques de Experiência",
+    companies_subtitle:
+      "Atuação em ambientes SAP e de produto, entregando sistemas frontend sustentáveis e contribuindo no full-stack quando necessário",
     contact_title: "Envie-me uma mensagem!",
     contact_subtitle:
       "Tem alguma pergunta ou proposta, ou só quer dizer olá? Fique à vontade.",

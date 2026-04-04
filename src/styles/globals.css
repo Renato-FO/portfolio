@@ -129,24 +129,23 @@ body {
 }
 
 .menu{
-  position: absolute;
-  display: hidden;
+  position: fixed;
   top: 0;
   right: 0;
   opacity: 0;
-  width: 300px;
-  height: 400px;
+  width: min(320px, 100vw);
+  height: 100dvh;
   background-color: var(--background-menu);
-  z-index: 1;
-  transition: all 0.3s ease;
-  border-radius: 5px;
+  z-index: 2900;
+  transition: opacity 0.3s ease;
+  border-radius: 0;
 }
 
 .menu.openedMenu {
   opacity: 1;
   display: flex;
-  transition: all 0.3s ease;
-  z-index: 200;
+  transition: opacity 0.3s ease;
+  z-index: 2900;
 }
 
 .menuItem:hover {

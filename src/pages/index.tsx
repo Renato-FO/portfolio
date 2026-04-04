@@ -233,12 +233,12 @@ export default function Home({ locale, dictionary }: Props) {
             </p>
           </div>
         </div>
-        <div style={{ zIndex: 2000 }} className="flex fixed w-full content">
+        <div style={{ zIndex: 3001 }} className="flex fixed w-full content">
           <button
             onClick={handleOpen}
             style={
               {
-                zIndex: 1000,
+                zIndex: 3002,
                 "--bg-color": menuBG,
                 "--close-bg": closeBG,
               } as React.CSSProperties

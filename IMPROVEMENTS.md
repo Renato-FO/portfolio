@@ -27,28 +27,26 @@
 ## 🔴 Alta Prioridade — Não Implementadas
 
 ### 2. Adicionar Seção de Projetos
-**Impacto:** Crítico para um Fullstack Engineer
+**Status:** ⏭️ Pulado — projetos são privados/empresariais
 
-O portfólio atual não exibe projetos realizados — a seção mais importante para demonstrar competências técnicas.
+**Decisão:** A maioria dos projetos foram desenvolvidos para empresas privadas (NDAs). Não é possível divulgar screenshots ou detalhes.
 
-**Sugestão:**
-- Grid de cards com screenshot/thumbnail de cada projeto
-- Tech stack utilizada (ícones)
-- Breve descrição + links (demo live + repo GitHub)
-- Filtros por categoria (Frontend, Backend, Fullstack)
-- Animação de entrada com scroll-triggered
+**Alternativa futura:** A seção de Blog (#10) funcionará como vitrine de conhecimento técnico — publicando sobre estudos, conceitos e soluções encontradas.
 
 ---
 
 ### 3. Tipografia Customizada
-**Impacto:** Alto — transforma completamente a percepção visual
+**Status:** ✅ Concluído
 
-O projeto usa a fonte padrão do Tailwind (sans-serif genérica).
+**Fontes adicionadas:**
+- **Inter** — corpo e títulos (substitui a sans-serif genérica do Tailwind)
+- **JetBrains Mono** — code snippet do Header, blocos de código
 
-**Sugestão:**
-- **Corpo/Títulos:** `Inter`, `Plus Jakarta Sans` ou `Space Grotesk`
-- **Code Snippet (Header):** `JetBrains Mono` ou `Fira Code`
-- Configurar via `tailwind.config.ts` e importar no `_app.tsx` via `next/font`
+**Arquivos alterados:**
+- `src/pages/_app.tsx` — importação via `next/font/google` (otimizado, sem request extra)
+- `tailwind.config.ts` — registradas como `font-sans` e `font-mono` via CSS variables
+
+**Resultado:** Tipografia mais profissional e legível. Inter é uma das fontes mais usadas em interfaces modernas; JetBrains Mono dá identidade técnica ao code snippet.
 
 ---
 

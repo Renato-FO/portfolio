@@ -32,6 +32,13 @@ const socials = [
   },
 ];
 
+const techStack = [
+  { label: "Frontend", value: "React, Vue, Next.js" },
+  { label: "Backend", value: "Node.js, NestJS, TypeScript" },
+  { label: "Database", value: "PostgreSQL, MariaDB" },
+  { label: "DevOps", value: "Docker, CI/CD, Git" },
+];
+
 export default function Header({
   title,
   subtitle_one,
@@ -57,11 +64,12 @@ export default function Header({
                     key={social.id}
                     about={social.alt}
                     href={social.link}
+                    className="opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300"
                   >
                     <Image
                       src={social.icon}
-                      width={25}
-                      height={25}
+                      width={32}
+                      height={32}
                       alt={social.alt}
                     />
                   </Link>
@@ -77,61 +85,22 @@ export default function Header({
               </h3>
             </div>
           </div>
-          <div className=" w-1/3 h-full hidden md:flex mr-10 lg:text-xs fontCode">
-            <div className="code h-full w-full p-2 text-primary-blue font-semibold">
-              <p>
-                1<span className="ml-6">class Person {`{`}</span>
-              </p>
-              <p>
-                2<span className="ml-8">name: string;</span>
-              </p>
-              <p>
-                3<span className="ml-8">occupation: string;</span>
-              </p>
-              <p>
-                4<span className="ml-8">age: number;</span>
-              </p>
-              <p>
-                5
-                <span className="ml-8">
-                  constructor (name, occupation, birthyear) {`{`}
-                </span>
-              </p>
-              <p>
-                6<span className="ml-10">this.name = name</span>
-              </p>
-              <p>
-                7<span className="ml-10">this.occupation = occupation</span>
-              </p>
-              <p>
-                8
-                <span className="ml-10">
-                  this.age = new Date().getFullYear() - birthyear
-                </span>
-              </p>
-              <p>
-                9<span className="ml-8">{`}`}</span>
-              </p>
-              <p>
-                10<span className="ml-6">{`}`}</span>
-              </p>
-              <p>11</p>
-              <p>
-                12<span className="ml-6">const Renato = new Person(</span>
-              </p>
-              <p>
-                13<span className="ml-8">{`"Renato Ordonho"`}</span>
-              </p>
-              <p>
-                14<span className="ml-8">{`"Full-stack Developer"`}</span>
-              </p>
-              <p>
-                15<span className="ml-8">1996</span>
-              </p>
-              <p>
-                16<span className="ml-6">)</span>
-              </p>
-            </div>
+
+          {/* Tech Stack Cards - Desktop */}
+          <div className="w-1/3 h-full hidden md:flex flex-col justify-center items-center mr-10 gap-4">
+            {techStack.map((tech) => (
+              <div
+                key={tech.label}
+                className="w-full max-w-xs p-4 rounded-lg border border-primary-green/20 bg-white/5 backdrop-blur-sm hover:border-primary-green/50 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <p className="text-primary-green text-sm font-bold uppercase tracking-wider">
+                  {tech.label}
+                </p>
+                <p className="text-white text-sm font-medium mt-1">
+                  {tech.value}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

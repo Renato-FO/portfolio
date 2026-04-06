@@ -32,8 +32,8 @@ type CustomHtml = HTMLElement | null;
 
 export default function Home({ locale, dictionary }: Props) {
   const [opened, setOpened] = useState(false),
-    [menuBG, setMenuBG] = useState("#66FF66"),
-    [closeBG, setCloseBG] = useState("#001F3F"),
+    [menuBG, setMenuBG] = useState("#10B981"),
+    [closeBG, setCloseBG] = useState("#0F172A"),
     [background, setBackground] = useState("white"),
     [selectedPage, setSelectedPage] = useState("header"),
     [scrolling, setScrolling] = useState(false),
@@ -42,36 +42,36 @@ export default function Home({ locale, dictionary }: Props) {
         displayName: dictionary.menu_home,
         id: "header",
         bgMenu: "white",
-        bgClose: "#001F3F",
-        background: "#66FF66",
+        bgClose: "#0F172A",
+        background: "#10B981",
       },
       {
         displayName: dictionary.menu_about,
         id: "about",
-        bgMenu: "#001F3F",
-        bgClose: "#66FF66",
-        background: "#001F3F",
+        bgMenu: "#0F172A",
+        bgClose: "#10B981",
+        background: "#0F172A",
       },
       {
         displayName: dictionary.menu_tooling,
         id: "tooling",
         bgMenu: "white",
-        bgClose: "#001F3F",
-        background: "#66FF66",
+        bgClose: "#0F172A",
+        background: "#10B981",
       },
       {
         displayName: dictionary.menu_companies,
         id: "companies",
-        bgMenu: "#001F3F",
-        bgClose: "#66FF66",
-        background: "#001F3F",
+        bgMenu: "#0F172A",
+        bgClose: "#10B981",
+        background: "#0F172A",
       },
       {
         displayName: dictionary.menu_contact,
         id: "contact",
         bgMenu: "white",
-        bgClose: "#001F3F",
-        background: "#66FF66",
+        bgClose: "#0F172A",
+        background: "#10B981",
       },
     ],
     pages = ["header", "about", "tooling", "companies", "contact"],
@@ -92,7 +92,7 @@ export default function Home({ locale, dictionary }: Props) {
     id: any,
     background: any,
     close: any,
-    menuBackground: any
+    menuBackground: any,
   ) => {
     if (typeof window !== "undefined") {
       const divAlvo: CustomHtml = document.getElementById(id);
@@ -125,7 +125,7 @@ export default function Home({ locale, dictionary }: Props) {
                 menu[index + 1].id,
                 menu[index + 1].background,
                 menu[index + 1].bgClose,
-                menu[index + 1].bgMenu
+                menu[index + 1].bgMenu,
               );
             }
           } else if (e.deltaY < 0) {
@@ -134,7 +134,7 @@ export default function Home({ locale, dictionary }: Props) {
                 menu[index - 1].id,
                 menu[index - 1].background,
                 menu[index - 1].bgClose,
-                menu[index - 1].bgMenu
+                menu[index - 1].bgMenu,
               );
             }
           }
@@ -145,7 +145,7 @@ export default function Home({ locale, dictionary }: Props) {
       },
       {
         passive: false,
-      }
+      },
     );
   }, [scrolling]);
 
@@ -168,7 +168,7 @@ export default function Home({ locale, dictionary }: Props) {
                         item.id,
                         item.background,
                         item.bgClose,
-                        item.bgMenu
+                        item.bgMenu,
                       )
                     }
                     style={

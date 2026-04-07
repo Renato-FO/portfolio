@@ -20,6 +20,15 @@ const config: Config = {
       colors: {
         "primary-green": "#10B981",
         "primary-blue": "#0F172A",
+        dark: {
+          primary: "#0a0f1a",
+          secondary: "#111827",
+          card: "#1f2937",
+        },
+        accent: {
+          DEFAULT: "#6366f1",
+          hover: "#4f46e5",
+        },
       },
     },
   },

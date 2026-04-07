@@ -2,142 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.bgCustomized{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #0F172A;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0f1a;
+  color: #ffffff;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 .content {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.code {
-  background-color: white;
-  max-width: 360px;
-  max-height: 270px;
-  margin-top: 10%;
-  border-radius: 5%;
-}
-
-.menu1{
-  height: 7px;
-  width: 66px;
-  border-radius: 15%;
-  background: var(--bg-color);
-  border-radius: 5px;
-  rotate: 180;
-  transition: ease;
-  z-index: 2000;
-}
-
-.menu2{
-  height: 7px;
-  width: 80px;
-  border-radius: 15%;
-  background: var(--bg-color);
-  border-radius: 5px;
-  transition: ease;
-  z-index: 2000;
-}
-
-.menu3{
-  height: 7px;
-  width: 54px;
-  border-radius: 15%;
-  background: var(--bg-color);
-  border-radius: 5px;
-  transition: ease;
-  z-index: 2000;
-}
-
-.opened .menu1 {
-  transform: rotate(45deg) translate(5px, 5px);
-  background: var(--close-bg);
-  z-index: 2000;
-}
-
-.opened .menu2 {
-  display: none;
-  z-index: 2000;
-}
-
-.opened .menu3 {
-  transform: rotate(-45deg) translate(5px, -5px);
-  background: var(--close-bg);
-  width: 66px;
-  z-index: 2000;
-}
-
-.menu1, .menu2, .menu3 {
-  transition: all 0.3s ease;
-  z-index: 2000;
-}
-
-.menu{
-  position: absolute;
-  display: hidden;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  width: 300px;
-  height: 400px;
-  background-color: var(--background-menu);
-  z-index: 1;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-}
-
-.menu.openedMenu {
-  opacity: 1;
-  display: flex;
-  transition: all 0.3s ease;
-  z-index: 200;
-}
-
-.menuItem:hover {
-  color: var(--color-text) !important;
-  background: var(--background-text)
-}
-.companyCard{
-  width: 250px;
-  height: 360px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 16.5px rgba(0, 0, 0, 0.25);
-  background-color: white;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 1024px) {
-  .fontCode {
-      font-size: 0.60rem/* 12px */;
-      line-height: 1rem/* 16px */;
-  }
-
-  .companyCard{
-    width: 200px;
-    height: 288px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 16.5px rgba(0, 0, 0, 0.25);
-    background-color: white;
-    display: flex;
-    justify-content: center;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
 
-@media (max-width: 720px) {
-  .companyCard{
-    width: 150px;
-    height: 150px;
-  }
+/* Scrollbar custom */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (max-width: 640px) {
- 
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
 }
